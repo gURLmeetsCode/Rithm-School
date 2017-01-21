@@ -1,0 +1,46 @@
+Framework vs Library:
+
+Framework - more rigid code w/ functionality 
+Library - little pieces to add on existing code base
+Jquery - used for DOM manipualtion when there is a user action (events). 
+if you want to check for Jquery type " $=== jquery" and it should it equal true or just type jquery ( if it doesnt exist it will throw a reference error)
+
+Refresher:
+document.getElementbyId
+In jquery to get elements by tag name:
+$('div')
+$$('div') this will get all
+
+Difference between HTMLcollection vs Array:
+
+Ex. Iterate all the divs on the page and console.log the innerText for each div
+
+var divs = document.getElementsByTagName('div')
+for(var i = 0; i< div.length ; i++){
+console.log(divs[i].innerText)
+}
+
+
+divs.forEach(function(element)){
+console.log(element)
+}
+this will not work because forEach is undefined. 
+
+Finding things in the DOM:
+getById, getByTagName, getByClassName, querySelector
+
+jquery has one function for selecting things:
+$ - jquery
+
+inside the dollar sign you input what you want to select. you can use your CSS properties:
+Ex. $('div')
+to get the first div
+Ex. $('div').eq(0)
+this is returns a jquery object. you can chain methods to return consist list of jquery objects
+Ex. $('div')[0]
+this returns a HTML object
+
+ID's trump Class Names because of weighting. 
+
+
+
